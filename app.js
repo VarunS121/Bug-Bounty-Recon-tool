@@ -184,9 +184,6 @@ app.get('/', async (req, res) => {
             case 'crt-log':
                 res.redirect(`https://crt.sh/?q=${target}`)
                 break;
-            case '':
-                res.redirect(``)
-                break;
             case 'admin':
                 res.redirect('/')
                 break;
