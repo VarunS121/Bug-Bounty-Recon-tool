@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bug Bounty Tool</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/navigation.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <img src="images/New-Logo.png" alt="logo" /> 
+    <div class="home"><ul> <li><a  href="/">   Home </a></li></ul></div>
+    
+    <ul>
+      <li><a href="/about-us">About Us </a></li>      
+    </ul>
+  </div>
+
+  <div class="flag-container">
+    <img src="images/logo2.png" alt="Center Image" />
+  </div>
+
+<form action="/" method="get" target="_blank">
+  <div class="input-group">
+    <label for="target">Target:</label>
+    <input name="target" type="text" id="target" placeholder="Enter target information" />
+  </div>
+  <nav>
+    <ul class="nav-ul">
+      <li><button name="option" value="dir-list">Directory Listing</button></li>
+      <li><button name="option" value="config-files">Configuration Files</button></li>
+      <li><button name="option" value="db-files">Database Files</button></li>
+      <li><button name="option" value="wp">WordPress</button></li>
+      <li><button name="option" value="log-files">Log Files</button></li>
+      <li><button name="option" value="bak-files">Backup and Old Files</button></li>
+      <li><button name="option" value="domaineye">DomainEye</button></li>
+    </ul>
+    <ul class="nav-ul">
+        <li><button name="option" value="login-pgs">Login Pages</button></li>
+        <li><button name="option" value="sql-errs">SQL Errors</button></li>
+        <li><button name="option" value="apache-config">Apache config files</button></li>
+        <li><button name="option" value="robots">Robots.txt</button></li>
+        <li><button name="option" value="public-docs">Publicly Exposed Documents</button></li>
+        <li><button name="option" value="php-info">PHP Info</button></li>
+        <li><button name="option" value="sec-heads">Check Security Headers</button></li>
+      </ul>
+      <ul class="nav-ul">
+        <li><button name="option" value="bckdoors">Finding Backdoors</button></li>
+        <li><button name="option" value="setup-files">Install / Setup Files</button></li>
+        <li><button name="option" value="op-redir">Open Redirects</button></li>
+        <li><button name="option" value="apace-struts">Apache STRUTS RCE</button></li>
+        <li><button name="option" value="3rdprty">Third Party Exposure</button></li>
+        <li><button name="option" value="git-lab">Git Lab</button></li>
+        <li><button name="option" value="pssive-total">Passive Total</button></li>
+      </ul>
+      <ul class="nav-ul">
+        <li><button name="option" value="pastebin">Find PasteBin Entries</button></li>
+        <li><button name="option" value="linkedin">Employees on Linkedin</button></li>
+        <li><button name="option" value="htaccess">Htaccess sensitive files</button></li>
+        <li><button name="option" value="fsub">Find subdomains</button></li>
+        <li><button name="option" value="fsubsub">Find Sub-subomains</button></li>
+        <li><button name="option" value="wp2">Find WordPress #2</button></li>
+        <li><button name="option" value="wp-wb">Find WordPress (Wayback Machine)</button></li>
+      </ul>
+      <ul class="nav-ul">
+        <li><button name="option" value="stackoverflow">Search in StackOverflow</button></li>
+        <li><button name="option" value="xdomain">Test in Cross Domain</button></li>
+        <li><button name="option" value="git-fldr">.git folder</button></li>
+        <li><button name="option" value="digiocean">Digital Ocean spaces</button></li>
+        <li><button name="option" value="fswf-google">Find .SWF File (Google)</button></li>
+        <li><button name="option" value="fswf-yandex">Find .SWF File (yandex)</button></li>
+        <li><button name="option" value="s-git">Search in GitHub</button></li>
+      </ul>
+      <ul class="nav-ul">
+        <li><button name="option" value="traefik">Traefik</button></li>
+        <li><button name="option" value="s3-bckts">S3 Buckets</button></li>
+        <li><button name="option" value="api-end">API Endpoints - WSDL</button></li>
+        <li><button name="option" value="plntxt-psswd">PlainText password leak</button></li>
+        <li><button name="option" value="s-bitb-atl">Search in Bitbucket and Atlassian</button></li>
+        <li><button name="option" value="open-bb">Search in OpenBugBounty</button></li>
+        <li><button name="option" value="reddit">Search in Reddit</button></li>
+      </ul>
+      <ul class="nav-ul">
+        <li><button name="option" value="thrt-crwd">Check In ThreatCrowd</button></li>
+        <li><button name="option" value="utube">Youtube</button></li>
+        <li><button name="option" value="s-swf">Search SWF in Wayback</button></li>
+        <li><button name="option" value="wayback2">Search in Wayback #2</button></li>
+        <li><button name="option" value="wayback3">Search in Wayback #3</button></li>
+        <li><button name="option" value="cms">What CMS</button></li>
+        <li><button name="option" value="cld-bckts">Cloud Storage and Buckets</button></li>
+      </ul>
+      <ul class="nav-ul">
+        <li><button name="option" value="srccode">Sourcecode - PublicWWW</button></li>
+        <li><button name="option" value="censys-ip">Check in CENSYS [IPV4]</button></li>
+        <li><button name="option" value="censys-domains">Check in CENSYS [DOMAINS]</button></li>
+        <li><button name="option" value="censys-certs">Check in CENSYS [CERTS]</button></li>
+        <li><button name="option" value="shodan">Search in Shodan</button></li>
+        <li><button name="option" value="git-gist">GitHub Gist Searches</button></li>
+        <li><button name="option" value="crt-log">Search in CRT logs</button></li>
+      </ul>
+  </nav>
+</form>
+  
+
+  
+<div class="footer">
+  OSINT framework focused on gathering information from free tools or resources. The intention is to help people find free OSINT resources. Some of the sites included might require registration or offer more data for $$$, but you should be able to get at least a portion of the available information for no cost.
+We created this framework with an information security point of view. Since then, the response from other fields and disciplines has been incredible. I would love to be able to include any other OSINT resources, especially from fields outside of infosec. Please let me know about anything that might be missing!
+For Update Notifications, Suggestions, Comments, Feedback
+
+Feedback or new tool suggestions are extremely welcome! Please feel free to reach out on info@hacker4help.com
+
+
+</div>
+
+<div class = "footera">
+  With ❤️, from Hacker4Help!
+</div>
+</body>
+
+</html>
